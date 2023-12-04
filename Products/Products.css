@@ -1,0 +1,80 @@
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 20rem;
+  margin-top: 2rem;
+  z-index: -2;
+}
+
+.card {
+  background: transparent;
+  margin: 20px;
+  border: 2px solid #ededed;
+  padding: 20px;
+  cursor: pointer;
+  box-shadow: inset 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.card-img {
+  width: 13rem;
+}
+
+.card-title {
+  margin-bottom: 1rem;
+}
+
+.card-reviews {
+  margin-bottom: 1rem;
+  display: flex;
+}
+
+.rating-star {
+  color: #d5ab55;
+}
+
+.total-reviews {
+  font-size: 0.9rem;
+  margin-left: 10px;
+}
+
+.card-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bag-icon {
+  color: #535353;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1200px) {
+  .card-container {
+    margin-left: 10rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .card-container {
+    margin-left: 5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card-container {
+    margin-left: 2rem;
+  }
+  .card {
+    margin: 10px;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .card-container {
+    margin-left: 0;
+  }
+  .card-img {
+    width: 100%;
+  }
+}
